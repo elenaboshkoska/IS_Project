@@ -9,6 +9,7 @@ using EShop.Web.Data;
 using EShop.Web.Models;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
+using EShop.Web.Models.DTO;
 
 namespace EShop.Web.Controllers
 {
@@ -161,6 +162,60 @@ namespace EShop.Web.Controllers
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> AddProductToCart(Guid Id)
+        {
+            var selectedProduct = await _context.Products.FirstOrDefaultAsync(m => m.Id == Id);
+            if(selectedProduct != null)
+            {
+                var model = new AddToCartDTO
+                {
+                    SelectedProductName = selectedProduct.ProductName,
+                    SelectedProductId = selectedProduct.Id,
+                    Quantity = 1
+                };
+                return View(model);
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddProductToCart(AddToCartDTO model)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier)??null;
+            
+            if (userId != null) {
+                var loggedInUser = await _context.Users
+                    .Include(z => z.UserCart)
+                    .Include("UserCart.ProductInShoppingCarts")
+                    .FirstOrDefaultAsync(z => z.Id == userId);
+
+                var userCart = loggedInUser?.UserCart;
+
+                var selectedProduct = await _context.Products.FirstOrDefaultAsync(z => z.Id == model.SelectedProductId);
+
+                if(selectedProduct != null && userCart != null)
+                {
+                    userCart.ProductInShoppingCarts.Add(new ProductInShoppingCart
+                    {
+                        Product = selectedProduct,
+                        ProductId = selectedProduct.Id,
+                        ShoppingCart = userCart,
+                        ShoppingCartId = userCart.Id,
+                        Quantity = model.Quantity
+                    });
+
+                    _context.Update(userCart);
+
+                    _context.SaveChanges();
+
+                    return RedirectToAction("Index", "Products");
+                }
+
+            }
+
+            return View(model);
         }
 
         private bool ProductExists(Guid id)
