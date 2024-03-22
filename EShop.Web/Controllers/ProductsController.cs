@@ -210,7 +210,7 @@ namespace EShop.Web.Controllers
 
                     _context.SaveChanges();
 
-                    return RedirectToAction("Index", "Products");
+                    return RedirectToAction("Index", "ShoppingCarts");
                 }
 
             }

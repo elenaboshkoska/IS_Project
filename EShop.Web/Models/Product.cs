@@ -18,5 +18,6 @@ namespace EShop.Web.Models
         public double Rating { get; set; }
         public virtual EShopApplicationUser? CreatedBy { get; set; }
         public virtual ICollection<ProductInShoppingCart>? ProductsInShoppingCart { get; set; }
+        public ICollection<ProductInOrder>? ProductInOrders { get; set; }
     }
 }

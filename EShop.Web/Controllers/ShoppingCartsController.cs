@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using EShop.Web.Data;
 using EShop.Web.Models;
 using System.Security.Claims;
+using System.Data;
+using EShop.Web.Models.DTO;
 
 namespace EShop.Web.Controllers
 {
@@ -33,7 +35,22 @@ namespace EShop.Web.Controllers
                     .Include("UserCart.ProductInShoppingCarts.Product")
                     .FirstOrDefaultAsync(z => z.Id == userId);
 
-                return View(loggedInUser?.UserCart.ProductInShoppingCarts);
+                var allProducts = loggedInUser?.UserCart.ProductInShoppingCarts.ToList();
+
+                var totalPrice = 0.0;
+
+                foreach (var item in allProducts)
+                {
+                    totalPrice += Double.Round((item.Quantity * item.Product.Price), 2);
+                }
+
+                var model = new ShoppingCartDTO
+                {
+                    AllProducts = allProducts,
+                    TotalPrice = totalPrice
+                };
+
+                return View(model);
 
             }
 
@@ -138,38 +155,79 @@ namespace EShop.Web.Controllers
         }
 
         // GET: ShoppingCarts/Delete/5
-        public async Task<IActionResult> Delete(Guid? id)
+        public async Task<IActionResult> DeleteProductFromShoppingCart(Guid? productId)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier) ?? null;
 
-            var shoppingCart = await _context.ShoppingCarts
-                .Include(s => s.Owner)
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (shoppingCart == null)
+            if (userId != null)
             {
-                return NotFound();
-            }
+                var loggedInUser = await _context.Users
+                    .Include(z => z.UserCart)
+                    .Include("UserCart.ProductInShoppingCarts")
+                    .Include("UserCart.ProductInShoppingCarts.Product")
+                    .FirstOrDefaultAsync(z => z.Id == userId);
 
-            return View(shoppingCart);
+
+                var product_to_delete = loggedInUser?.UserCart.ProductInShoppingCarts.First(z => z.ProductId == productId);
+
+                loggedInUser?.UserCart.ProductInShoppingCarts.Remove(product_to_delete);
+
+                _context.ShoppingCarts.Update(loggedInUser?.UserCart);
+                _context.SaveChanges();
+
+                return RedirectToAction("Index", "ShoppingCarts");
+
+            }
+            return RedirectToAction("Index", "ShoppingCarts");
         }
 
-        // POST: ShoppingCarts/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(Guid id)
+        public async Task<IActionResult> Order()
         {
-            var shoppingCart = await _context.ShoppingCarts.FindAsync(id);
-            if (shoppingCart != null)
-            {
-                _context.ShoppingCarts.Remove(shoppingCart);
-            }
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier) ?? null;
 
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            if (userId != null)
+            {
+                var loggedInUser = await _context.Users
+                        .Include(z => z.UserCart)
+                        .Include("UserCart.ProductInShoppingCarts")
+                        .Include("UserCart.ProductInShoppingCarts.Product")
+                        .FirstOrDefaultAsync(z => z.Id == userId);
+
+                var userCart = loggedInUser?.UserCart;
+
+                var userOrder = new Order
+                {
+                    Id = Guid.NewGuid(),
+                    OwnerId = userId,
+                    Owner = loggedInUser
+                };
+
+                _context.Orders.Add(userOrder);
+                _context.SaveChanges();
+
+                var productInOrders = userCart?.ProductInShoppingCarts.Select(z => new ProductInOrder
+                {
+                    Order = userOrder,
+                    OrderId = userOrder.Id,
+                    ProductId = z.ProductId,
+                    OrderedProduct = z.Product,
+                    Quantity = z.Quantity
+                }).ToList();
+
+                _context.ProductInOrders.AddRange(productInOrders);
+                _context.SaveChanges();
+
+                userCart?.ProductInShoppingCarts.Clear();
+
+                _context.ShoppingCarts.Update(userCart);
+                _context.SaveChanges();
+
+                return RedirectToAction("Index", "ShoppingCarts");
+            }
+            return RedirectToAction("Index", "ShoppingCarts");
         }
+
+
 
         private bool ShoppingCartExists(Guid id)
         {
