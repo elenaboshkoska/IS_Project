@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace EShop.Web.Models
+
+namespace EShop.Domain.Domain
 {
     public class ProductInOrder
     {

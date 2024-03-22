@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using EShop.Web.Data;
-using EShop.Web.Models;
+using EShop.Repository;
+using EShop.Domain.Domain;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
-using EShop.Web.Models.DTO;
+using EShop.Domain.DTO;
 
 namespace EShop.Web.Controllers
 {

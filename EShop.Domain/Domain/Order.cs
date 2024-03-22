@@ -1,6 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using EShop.Domain.Identity;
+using System.ComponentModel.DataAnnotations;
 
-namespace EShop.Web.Models
+namespace EShop.Domain.Domain
 {
     public class Order
     {

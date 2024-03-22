@@ -1,8 +1,10 @@
-﻿using EShop.Web.Models;
+﻿
+using EShop.Domain.Domain;
+using EShop.Domain.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace EShop.Web.Data
+namespace EShop.Repository
 {
     public class ApplicationDbContext : IdentityDbContext<EShopApplicationUser>
     {
@@ -15,6 +17,6 @@ namespace EShop.Web.Data
         public virtual DbSet<ShoppingCart> ShoppingCarts { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<ProductInShoppingCart> ProductInShoppingCarts { get; set; }
-        public virtual DbSet<ProductInOrder> ProductInOrders{ get; set; }
+        public virtual DbSet<ProductInOrder> ProductInOrders { get; set; }
     }
 }
