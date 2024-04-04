@@ -10,34 +10,37 @@ using EShop.Domain.Domain;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using EShop.Domain.DTO;
+using EShop.Service.Interface;
 
 namespace EShop.Web.Controllers
 {
     public class ProductsController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IProductService _productService;
+        private readonly IShoppingCartService _shoppingCartService;
 
-        public ProductsController(ApplicationDbContext context)
+        public ProductsController(IProductService productService, IShoppingCartService shoppingCartService)
         {
-            _context = context;
+            _productService = productService;
+            _shoppingCartService = shoppingCartService;
         }
 
         // GET: Products
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            return View(await _context.Products.ToListAsync());
+            return View(_productService.GetProducts());
         }
 
         // GET: Products/Details/5
-        public async Task<IActionResult> Details(Guid? id)
+        public IActionResult Details(Guid? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var product = await _context.Products
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var product = _productService.GetProductById(id);
+
             if (product == null)
             {
                 return NotFound();
@@ -59,18 +62,12 @@ namespace EShop.Web.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize]
-        public async Task<IActionResult> Create([Bind("Id,ProductName,ProductDescription,ProductImage,Price,Rating")] Product product)
+        public IActionResult Create([Bind("Id,ProductName,ProductDescription,ProductImage,Price,Rating")] Product product)
         {
             if (ModelState.IsValid)
             {
-                var loggedInUser = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                var createdBy = _context.Users
-                    .Where(u => u.Id == loggedInUser)
-                    .FirstOrDefault();
-                product.Id = Guid.NewGuid();
-                product.CreatedBy = createdBy;
-                _context.Add(product);
-                await _context.SaveChangesAsync();
+                var loggedInUser = User.FindFirstValue(ClaimTypes.NameIdentifier) ?? "";
+                _productService.CreateNewProduct(loggedInUser, product);
                 return RedirectToAction(nameof(Index));
             }
             return View(product);
@@ -78,14 +75,14 @@ namespace EShop.Web.Controllers
 
         // GET: Products/Edit/5
         [Authorize]
-        public async Task<IActionResult> Edit(Guid? id)
+        public IActionResult Edit(Guid? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var product = await _context.Products.FindAsync(id);
+            var product = _productService.GetProductById(id);
             if (product == null)
             {
                 return NotFound();
@@ -99,7 +96,7 @@ namespace EShop.Web.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,ProductName,ProductDescription,ProductImage,Price,Rating")] Product product)
+        public ActionResult Edit(Guid id, [Bind("Id,ProductName,ProductDescription,ProductImage,Price,Rating")] Product product)
         {
             if (id != product.Id)
             {
@@ -108,22 +105,7 @@ namespace EShop.Web.Controllers
 
             if (ModelState.IsValid)
             {
-                try
-                {
-                    _context.Update(product);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!ProductExists(product.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                _productService.UpdateProduct(product);
                 return RedirectToAction(nameof(Index));
             }
             return View(product);
@@ -131,15 +113,14 @@ namespace EShop.Web.Controllers
 
         // GET: Products/Delete/5
         [Authorize]
-        public async Task<IActionResult> Delete(Guid? id)
+        public IActionResult Delete(Guid? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var product = await _context.Products
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var product = _productService.GetProductById(id);
             if (product == null)
             {
                 return NotFound();
@@ -152,75 +133,39 @@ namespace EShop.Web.Controllers
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         [Authorize]
-        public async Task<IActionResult> DeleteConfirmed(Guid id)
+        public IActionResult DeleteConfirmed(Guid id)
         {
-            var product = await _context.Products.FindAsync(id);
-            if (product != null)
-            {
-                _context.Products.Remove(product);
-            }
-
-            await _context.SaveChangesAsync();
+            _productService.DeleteProduct(id);
             return RedirectToAction(nameof(Index));
         }
 
-        public async Task<IActionResult> AddProductToCart(Guid Id)
+        public IActionResult AddProductToCart(Guid Id)
         {
-            var selectedProduct = await _context.Products.FirstOrDefaultAsync(m => m.Id == Id);
-            if(selectedProduct != null)
+            var result = _shoppingCartService.getProductInfo(Id);
+            if(result != null)
             {
-                var model = new AddToCartDTO
-                {
-                    SelectedProductName = selectedProduct.ProductName,
-                    SelectedProductId = selectedProduct.Id,
-                    Quantity = 1
-                };
-                return View(model);
+                return View(result);
             }
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddProductToCart(AddToCartDTO model)
+        public IActionResult AddProductToCart(AddToCartDTO model)
         {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier)??null;
-            
-            if (userId != null) {
-                var loggedInUser = await _context.Users
-                    .Include(z => z.UserCart)
-                    .Include("UserCart.ProductInShoppingCarts")
-                    .FirstOrDefaultAsync(z => z.Id == userId);
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-                var userCart = loggedInUser?.UserCart;
+            var result = _shoppingCartService.AddProductToShoppingCart(userId, model);
 
-                var selectedProduct = await _context.Products.FirstOrDefaultAsync(z => z.Id == model.SelectedProductId);
-
-                if(selectedProduct != null && userCart != null)
-                {
-                    userCart.ProductInShoppingCarts.Add(new ProductInShoppingCart
-                    {
-                        Product = selectedProduct,
-                        ProductId = selectedProduct.Id,
-                        ShoppingCart = userCart,
-                        ShoppingCartId = userCart.Id,
-                        Quantity = model.Quantity
-                    });
-
-                    _context.Update(userCart);
-
-                    _context.SaveChanges();
-
-                    return RedirectToAction("Index", "ShoppingCarts");
-                }
-
+            if(result != null)
+            {
+                return RedirectToAction("Index", "ShoppingCarts");
             }
-
-            return View(model);
+            else { return View(model); }
         }
 
         private bool ProductExists(Guid id)
         {
-            return _context.Products.Any(e => e.Id == id);
+            return _productService.GetProductById(id) != null;
         }
     }
 }

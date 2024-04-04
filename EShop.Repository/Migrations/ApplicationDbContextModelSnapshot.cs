@@ -35,7 +35,7 @@ namespace EShop.Repository.Migrations
 
                     b.HasIndex("OwnerId");
 
-                    b.ToTable("Orders");
+                    b.ToTable("Orders", (string)null);
                 });
 
             modelBuilder.Entity("EShop.Domain.Domain.Product", b =>
@@ -69,7 +69,7 @@ namespace EShop.Repository.Migrations
 
                     b.HasIndex("CreatedById");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("EShop.Domain.Domain.ProductInOrder", b =>
@@ -93,7 +93,7 @@ namespace EShop.Repository.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductInOrders");
+                    b.ToTable("ProductInOrders", (string)null);
                 });
 
             modelBuilder.Entity("EShop.Domain.Domain.ProductInShoppingCart", b =>
@@ -117,7 +117,7 @@ namespace EShop.Repository.Migrations
 
                     b.HasIndex("ShoppingCartId");
 
-                    b.ToTable("ProductInShoppingCarts");
+                    b.ToTable("ProductInShoppingCarts", (string)null);
                 });
 
             modelBuilder.Entity("EShop.Domain.Domain.ShoppingCart", b =>
@@ -135,7 +135,7 @@ namespace EShop.Repository.Migrations
                         .IsUnique()
                         .HasFilter("[OwnerId] IS NOT NULL");
 
-                    b.ToTable("ShoppingCarts");
+                    b.ToTable("ShoppingCarts", (string)null);
                 });
 
             modelBuilder.Entity("EShop.Domain.Identity.EShopApplicationUser", b =>

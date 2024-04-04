@@ -3,10 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace EShop.Domain.Domain
 {
-    public class Product
+    public class Product : BaseEntity
     {
-        [Key]
-        public Guid Id { get; set; }
         [Required]
         public string? ProductName { get; set; }
         [Required]

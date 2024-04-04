@@ -4,10 +4,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace EShop.Domain.Domain
 {
-    public class ShoppingCart
+    public class ShoppingCart : BaseEntity
     {
-        [Key]
-        public Guid Id { get; set; }
         public string? OwnerId { get; set; }
         public EShopApplicationUser? Owner { get; set; }
         public virtual ICollection<ProductInShoppingCart>? ProductInShoppingCarts { get; set; }

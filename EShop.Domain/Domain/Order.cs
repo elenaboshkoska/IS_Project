@@ -3,10 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace EShop.Domain.Domain
 {
-    public class Order
+    public class Order : BaseEntity
     {
-        [Key]
-        public Guid Id { get; set; }
         public string? OwnerId { get; set; }
         public EShopApplicationUser? Owner { get; set; }
 

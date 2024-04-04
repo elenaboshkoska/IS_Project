@@ -3,10 +3,8 @@
 
 namespace EShop.Domain.Domain
 {
-    public class ProductInOrder
+    public class ProductInOrder : BaseEntity
     {
-        [Key]
-        public Guid Id { get; set; }
         public Guid ProductId { get; set; }
         public Product? OrderedProduct { get; set; }
 
