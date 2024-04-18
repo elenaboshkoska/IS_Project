@@ -1,4 +1,7 @@
-﻿@model EShop.Domain.DTO.ShoppingCartDTO
+﻿@using EShop.Domain.Payment
+@using Microsoft.Extensions.Options
+@model EShop.Domain.DTO.ShoppingCartDTO
+@inject IOptions<StripeSettings> Stripe
 
 @{
     ViewData["Title"] = "Index";
@@ -7,9 +10,26 @@
 
 <h1>Index</h1>
 
-<p>
+@* <p>
     <a class="btn btn-success" asp-action="Order">Order Now</a>
-</p>
+</p> *@
+
+@if(Model.TotalPrice > 0)
+{
+    <form asp-controller="ShoppingCarts" asp-action="PayOrder" method="post">
+        <article>
+            <script src="https://checkout.stripe.com/checkout.js"
+                    class="stripe-button"
+                    data-key="@Stripe.Value.PublicKey"
+                    data-locale="auto"
+                    data-description="EShop Application Payment"
+                    data-amount="@(Model.TotalPrice * 100)"
+                    data-label="Плати Ден:@Model.TotalPrice">
+            </script>
+        </article>
+    </form>
+}
+
 <table class="table">
     <thead class="thead-dark">
         <tr>
