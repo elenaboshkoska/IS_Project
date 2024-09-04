@@ -1,0 +1,851 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\elena\\Desktop\\integrated_systems\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{03C1F39D-48A3-41EA-B173-89B53EC0593E}|EShop.Domain\\EShop.Domain.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.domain\\domain\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C1F39D-48A3-41EA-B173-89B53EC0593E}|EShop.Domain\\EShop.Domain.csproj|solutionrelative:eshop.domain\\domain\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C1F39D-48A3-41EA-B173-89B53EC0593E}|EShop.Domain\\EShop.Domain.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.domain\\domain\\publishers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C1F39D-48A3-41EA-B173-89B53EC0593E}|EShop.Domain\\EShop.Domain.csproj|solutionrelative:eshop.domain\\domain\\publishers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C1F39D-48A3-41EA-B173-89B53EC0593E}|EShop.Domain\\EShop.Domain.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.domain\\domain\\publishparametars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C1F39D-48A3-41EA-B173-89B53EC0593E}|EShop.Domain\\EShop.Domain.csproj|solutionrelative:eshop.domain\\domain\\publishparametars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\controllers\\publisherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\controllers\\publisherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\views\\authors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\views\\authors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\views\\publishers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\views\\publishers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\views\\publishers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\views\\publishers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\views\\authors\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\views\\authors\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34ED5C71-5A20-4B99-9F19-ECB0BCE2FFC5}|EShop.Repository\\EShop.Repository.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.repository\\migrations\\20240831204307_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34ED5C71-5A20-4B99-9F19-ECB0BCE2FFC5}|EShop.Repository\\EShop.Repository.csproj|solutionrelative:eshop.repository\\migrations\\20240831204307_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C1F39D-48A3-41EA-B173-89B53EC0593E}|EShop.Domain\\EShop.Domain.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.domain\\domain\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C1F39D-48A3-41EA-B173-89B53EC0593E}|EShop.Domain\\EShop.Domain.csproj|solutionrelative:eshop.domain\\domain\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\views\\publishers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\views\\publishers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\views\\publishers\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\views\\publishers\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\views\\publishers\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\views\\publishers\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72913C86-C107-4398-8248-95613BBF07D2}|EShop.Service\\EShop.Service.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.service\\implementation\\publishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72913C86-C107-4398-8248-95613BBF07D2}|EShop.Service\\EShop.Service.csproj|solutionrelative:eshop.service\\implementation\\publishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\views\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\views\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\views\\books\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\views\\books\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\views\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\views\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34ED5C71-5A20-4B99-9F19-ECB0BCE2FFC5}|EShop.Repository\\EShop.Repository.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.repository\\implementation\\publishrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34ED5C71-5A20-4B99-9F19-ECB0BCE2FFC5}|EShop.Repository\\EShop.Repository.csproj|solutionrelative:eshop.repository\\implementation\\publishrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\controllers\\publishparametarscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\controllers\\publishparametarscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72913C86-C107-4398-8248-95613BBF07D2}|EShop.Service\\EShop.Service.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.service\\implementation\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72913C86-C107-4398-8248-95613BBF07D2}|EShop.Service\\EShop.Service.csproj|solutionrelative:eshop.service\\implementation\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34ED5C71-5A20-4B99-9F19-ECB0BCE2FFC5}|EShop.Repository\\EShop.Repository.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.repository\\implementation\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34ED5C71-5A20-4B99-9F19-ECB0BCE2FFC5}|EShop.Repository\\EShop.Repository.csproj|solutionrelative:eshop.repository\\implementation\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\eshop.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\eshop.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34ED5C71-5A20-4B99-9F19-ECB0BCE2FFC5}|EShop.Repository\\EShop.Repository.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.repository\\eshop.repository.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{34ED5C71-5A20-4B99-9F19-ECB0BCE2FFC5}|EShop.Repository\\EShop.Repository.csproj|solutionrelative:eshop.repository\\eshop.repository.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34ED5C71-5A20-4B99-9F19-ECB0BCE2FFC5}|EShop.Repository\\EShop.Repository.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.repository\\interface\\ipublishrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34ED5C71-5A20-4B99-9F19-ECB0BCE2FFC5}|EShop.Repository\\EShop.Repository.csproj|solutionrelative:eshop.repository\\interface\\ipublishrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72913C86-C107-4398-8248-95613BBF07D2}|EShop.Service\\EShop.Service.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.service\\interface\\ipublishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72913C86-C107-4398-8248-95613BBF07D2}|EShop.Service\\EShop.Service.csproj|solutionrelative:eshop.service\\interface\\ipublishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72913C86-C107-4398-8248-95613BBF07D2}|EShop.Service\\EShop.Service.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.service\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72913C86-C107-4398-8248-95613BBF07D2}|EShop.Service\\EShop.Service.csproj|solutionrelative:eshop.service\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72913C86-C107-4398-8248-95613BBF07D2}|EShop.Service\\EShop.Service.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.service\\interface\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72913C86-C107-4398-8248-95613BBF07D2}|EShop.Service\\EShop.Service.csproj|solutionrelative:eshop.service\\interface\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72913C86-C107-4398-8248-95613BBF07D2}|EShop.Service\\EShop.Service.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.service\\implementation\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72913C86-C107-4398-8248-95613BBF07D2}|EShop.Service\\EShop.Service.csproj|solutionrelative:eshop.service\\implementation\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72913C86-C107-4398-8248-95613BBF07D2}|EShop.Service\\EShop.Service.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.service\\interface\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72913C86-C107-4398-8248-95613BBF07D2}|EShop.Service\\EShop.Service.csproj|solutionrelative:eshop.service\\interface\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34ED5C71-5A20-4B99-9F19-ECB0BCE2FFC5}|EShop.Repository\\EShop.Repository.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.repository\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34ED5C71-5A20-4B99-9F19-ECB0BCE2FFC5}|EShop.Repository\\EShop.Repository.csproj|solutionrelative:eshop.repository\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34ED5C71-5A20-4B99-9F19-ECB0BCE2FFC5}|EShop.Repository\\EShop.Repository.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.repository\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34ED5C71-5A20-4B99-9F19-ECB0BCE2FFC5}|EShop.Repository\\EShop.Repository.csproj|solutionrelative:eshop.repository\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C1F39D-48A3-41EA-B173-89B53EC0593E}|EShop.Domain\\EShop.Domain.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.domain\\domain\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C1F39D-48A3-41EA-B173-89B53EC0593E}|EShop.Domain\\EShop.Domain.csproj|solutionrelative:eshop.domain\\domain\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C1F39D-48A3-41EA-B173-89B53EC0593E}|EShop.Domain\\EShop.Domain.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.domain\\domain\\authors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C1F39D-48A3-41EA-B173-89B53EC0593E}|EShop.Domain\\EShop.Domain.csproj|solutionrelative:eshop.domain\\domain\\authors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C1F39D-48A3-41EA-B173-89B53EC0593E}|EShop.Domain\\EShop.Domain.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.domain\\identity\\eshopapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C1F39D-48A3-41EA-B173-89B53EC0593E}|EShop.Domain\\EShop.Domain.csproj|solutionrelative:eshop.domain\\identity\\eshopapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34ED5C71-5A20-4B99-9F19-ECB0BCE2FFC5}|EShop.Repository\\EShop.Repository.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.repository\\implementation\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34ED5C71-5A20-4B99-9F19-ECB0BCE2FFC5}|EShop.Repository\\EShop.Repository.csproj|solutionrelative:eshop.repository\\implementation\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34ED5C71-5A20-4B99-9F19-ECB0BCE2FFC5}|EShop.Repository\\EShop.Repository.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.repository\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34ED5C71-5A20-4B99-9F19-ECB0BCE2FFC5}|EShop.Repository\\EShop.Repository.csproj|solutionrelative:eshop.repository\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9F430419-6F39-4DF6-8DC4-DFC1DD7A0E08}|EShop.Web\\EShop.Web.csproj|solutionrelative:eshop.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/MovieAppDB/True/SqlTable/dbo.Orders.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/MovieAppDB/True/SqlTable/dbo.TicketInOrders.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/MovieAppDB/True/SqlTable/dbo.Tickets.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34ED5C71-5A20-4B99-9F19-ECB0BCE2FFC5}|EShop.Repository\\EShop.Repository.csproj|c:\\users\\elena\\desktop\\integrated_systems\\eshop.repository\\migrations\\20240831213524_inital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34ED5C71-5A20-4B99-9F19-ECB0BCE2FFC5}|EShop.Repository\\EShop.Repository.csproj|solutionrelative:eshop.repository\\migrations\\20240831213524_inital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 14,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Authors\\Index.cshtml",
+              "RelativeDocumentMoniker": "EShop.Web\\Views\\Authors\\Index.cshtml",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Authors\\Index.cshtml",
+              "RelativeToolTip": "EShop.Web\\Views\\Authors\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-31T21:39:15.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Publishers\\Create.cshtml",
+              "RelativeDocumentMoniker": "EShop.Web\\Views\\Publishers\\Create.cshtml",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Publishers\\Create.cshtml",
+              "RelativeToolTip": "EShop.Web\\Views\\Publishers\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-31T21:30:37.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20240831204307_init.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Repository\\Migrations\\20240831204307_init.cs",
+              "RelativeDocumentMoniker": "EShop.Repository\\Migrations\\20240831204307_init.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Repository\\Migrations\\20240831204307_init.cs",
+              "RelativeToolTip": "EShop.Repository\\Migrations\\20240831204307_init.cs",
+              "ViewState": "AQIAAKYAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:43:07.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Publishers\\Index.cshtml",
+              "RelativeDocumentMoniker": "EShop.Web\\Views\\Publishers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Publishers\\Index.cshtml",
+              "RelativeToolTip": "EShop.Web\\Views\\Publishers\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-31T21:26:50.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Books\\Index.cshtml",
+              "RelativeDocumentMoniker": "EShop.Web\\Views\\Books\\Index.cshtml",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Books\\Index.cshtml",
+              "RelativeToolTip": "EShop.Web\\Views\\Books\\Index.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-31T21:19:35.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PublishersController.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Controllers\\PublishersController.cs",
+              "RelativeDocumentMoniker": "EShop.Web\\Controllers\\PublishersController.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Controllers\\PublishersController.cs",
+              "RelativeToolTip": "EShop.Web\\Controllers\\PublishersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T21:11:49.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PublishParametars.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Domain\\Domain\\PublishParametars.cs",
+              "RelativeDocumentMoniker": "EShop.Domain\\Domain\\PublishParametars.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Domain\\Domain\\PublishParametars.cs",
+              "RelativeToolTip": "EShop.Domain\\Domain\\PublishParametars.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:46:59.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Publishers.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Domain\\Domain\\Publishers.cs",
+              "RelativeDocumentMoniker": "EShop.Domain\\Domain\\Publishers.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Domain\\Domain\\Publishers.cs",
+              "RelativeToolTip": "EShop.Domain\\Domain\\Publishers.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:46:36.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Orders.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Domain\\Domain\\Orders.cs",
+              "RelativeDocumentMoniker": "EShop.Domain\\Domain\\Orders.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Domain\\Domain\\Orders.cs",
+              "RelativeToolTip": "EShop.Domain\\Domain\\Orders.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:46:18.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Authors\\Create.cshtml",
+              "RelativeDocumentMoniker": "EShop.Web\\Views\\Authors\\Create.cshtml",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Authors\\Create.cshtml",
+              "RelativeToolTip": "EShop.Web\\Views\\Authors\\Create.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-31T21:39:30.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Domain\\Domain\\Book.cs",
+              "RelativeDocumentMoniker": "EShop.Domain\\Domain\\Book.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Domain\\Domain\\Book.cs",
+              "RelativeToolTip": "EShop.Domain\\Domain\\Book.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:44:59.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Publishers\\Delete.cshtml",
+              "RelativeDocumentMoniker": "EShop.Web\\Views\\Publishers\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Publishers\\Delete.cshtml",
+              "RelativeToolTip": "EShop.Web\\Views\\Publishers\\Delete.cshtml",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAhwA4AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-31T21:27:12.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Publishers\\Edit.cshtml",
+              "RelativeDocumentMoniker": "EShop.Web\\Views\\Publishers\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Publishers\\Edit.cshtml",
+              "RelativeToolTip": "EShop.Web\\Views\\Publishers\\Edit.cshtml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAqwBYAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-31T21:30:48.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "20240831213524_inital.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Repository\\Migrations\\20240831213524_inital.cs",
+              "RelativeDocumentMoniker": "EShop.Repository\\Migrations\\20240831213524_inital.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Repository\\Migrations\\20240831213524_inital.cs",
+              "RelativeToolTip": "EShop.Repository\\Migrations\\20240831213524_inital.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T21:35:25.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Books\\Edit.cshtml",
+              "RelativeDocumentMoniker": "EShop.Web\\Views\\Books\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Books\\Edit.cshtml",
+              "RelativeToolTip": "EShop.Web\\Views\\Books\\Edit.cshtml",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAqwCEAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-31T21:26:32.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Books\\Details.cshtml",
+              "RelativeDocumentMoniker": "EShop.Web\\Views\\Books\\Details.cshtml",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Books\\Details.cshtml",
+              "RelativeToolTip": "EShop.Web\\Views\\Books\\Details.cshtml",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAqwCMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-31T21:26:14.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PublishService.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Service\\Implementation\\PublishService.cs",
+              "RelativeDocumentMoniker": "EShop.Service\\Implementation\\PublishService.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Service\\Implementation\\PublishService.cs",
+              "RelativeToolTip": "EShop.Service\\Implementation\\PublishService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAqwBsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:57:41.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Publishers\\Details.cshtml",
+              "RelativeDocumentMoniker": "EShop.Web\\Views\\Publishers\\Details.cshtml",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Publishers\\Details.cshtml",
+              "RelativeToolTip": "EShop.Web\\Views\\Publishers\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAhwA0AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-31T21:26:56.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Books\\Delete.cshtml",
+              "RelativeDocumentMoniker": "EShop.Web\\Views\\Books\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Books\\Delete.cshtml",
+              "RelativeToolTip": "EShop.Web\\Views\\Books\\Delete.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-31T21:25:56.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Books\\Create.cshtml",
+              "RelativeDocumentMoniker": "EShop.Web\\Views\\Books\\Create.cshtml",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Books\\Create.cshtml",
+              "RelativeToolTip": "EShop.Web\\Views\\Books\\Create.cshtml",
+              "ViewState": "AQIAABAAAAAAAAAAAAAhwCEAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-31T21:19:28.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "EShop.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "EShop.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABwAAAByAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-31T21:20:00.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PublishRepository.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Repository\\Implementation\\PublishRepository.cs",
+              "RelativeDocumentMoniker": "EShop.Repository\\Implementation\\PublishRepository.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Repository\\Implementation\\PublishRepository.cs",
+              "RelativeToolTip": "EShop.Repository\\Implementation\\PublishRepository.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAmwBwAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:48:18.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "EShop.Web\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "EShop.Web\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-31T21:21:29.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AuthorsController.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Controllers\\AuthorsController.cs",
+              "RelativeDocumentMoniker": "EShop.Web\\Controllers\\AuthorsController.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Controllers\\AuthorsController.cs",
+              "RelativeToolTip": "EShop.Web\\Controllers\\AuthorsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T21:21:09.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PublishParametarsController.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Controllers\\PublishParametarsController.cs",
+              "RelativeDocumentMoniker": "EShop.Web\\Controllers\\PublishParametarsController.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Controllers\\PublishParametarsController.cs",
+              "RelativeToolTip": "EShop.Web\\Controllers\\PublishParametarsController.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAswAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T21:16:30.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "EShop.Web\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "EShop.Web\\Controllers\\OrdersController.cs",
+              "ViewState": "AQIAAIIAAAAAAAAAAADwvxIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T21:13:56.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "EShop.Web\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "EShop.Web\\Controllers\\BooksController.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAiwIoAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T21:12:36.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "EShop.Web.csproj",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\EShop.Web.csproj",
+              "RelativeDocumentMoniker": "EShop.Web\\EShop.Web.csproj",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\EShop.Web.csproj",
+              "RelativeToolTip": "EShop.Web\\EShop.Web.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-31T21:10:00.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EShop.Repository",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Repository\\EShop.Repository.csproj",
+              "RelativeDocumentMoniker": "EShop.Repository\\EShop.Repository.csproj",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Repository\\EShop.Repository.csproj",
+              "RelativeToolTip": "EShop.Repository\\EShop.Repository.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-31T21:08:45.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IPublishRepository.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Repository\\Interface\\IPublishRepository.cs",
+              "RelativeDocumentMoniker": "EShop.Repository\\Interface\\IPublishRepository.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Repository\\Interface\\IPublishRepository.cs",
+              "RelativeToolTip": "EShop.Repository\\Interface\\IPublishRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:48:36.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Repository\\Implementation\\UserRepository.cs",
+              "RelativeDocumentMoniker": "EShop.Repository\\Implementation\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Repository\\Implementation\\UserRepository.cs",
+              "RelativeToolTip": "EShop.Repository\\Implementation\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:50:38.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Service\\Implementation\\OrderService.cs",
+              "RelativeDocumentMoniker": "EShop.Service\\Implementation\\OrderService.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Service\\Implementation\\OrderService.cs",
+              "RelativeToolTip": "EShop.Service\\Implementation\\OrderService.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAA3wAsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:55:24.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IPublishService.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Service\\Interface\\IPublishService.cs",
+              "RelativeDocumentMoniker": "EShop.Service\\Interface\\IPublishService.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Service\\Interface\\IPublishService.cs",
+              "RelativeToolTip": "EShop.Service\\Interface\\IPublishService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:56:53.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Service\\Class1.cs",
+              "RelativeDocumentMoniker": "EShop.Service\\Class1.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Service\\Class1.cs",
+              "RelativeToolTip": "EShop.Service\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T21:00:06.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Service\\Interface\\IOrderService.cs",
+              "RelativeDocumentMoniker": "EShop.Service\\Interface\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Service\\Interface\\IOrderService.cs",
+              "RelativeToolTip": "EShop.Service\\Interface\\IOrderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:56:10.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Service\\Implementation\\BookService.cs",
+              "RelativeDocumentMoniker": "EShop.Service\\Implementation\\BookService.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Service\\Implementation\\BookService.cs",
+              "RelativeToolTip": "EShop.Service\\Implementation\\BookService.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAYwAsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:52:16.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IBookService.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Service\\Interface\\IBookService.cs",
+              "RelativeDocumentMoniker": "EShop.Service\\Interface\\IBookService.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Service\\Interface\\IBookService.cs",
+              "RelativeToolTip": "EShop.Service\\Interface\\IBookService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:54:01.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Repository\\Interface\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "EShop.Repository\\Interface\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Repository\\Interface\\IUserRepository.cs",
+              "RelativeToolTip": "EShop.Repository\\Interface\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:51:12.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Domain\\Domain\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "EShop.Domain\\Domain\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Domain\\Domain\\BaseEntity.cs",
+              "RelativeToolTip": "EShop.Domain\\Domain\\BaseEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:45:14.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Authors.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Domain\\Domain\\Authors.cs",
+              "RelativeDocumentMoniker": "EShop.Domain\\Domain\\Authors.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Domain\\Domain\\Authors.cs",
+              "RelativeToolTip": "EShop.Domain\\Domain\\Authors.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:45:53.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Repository\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "EShop.Repository\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Repository\\ApplicationDbContext.cs",
+              "RelativeToolTip": "EShop.Repository\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:41:36.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "EShop.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "EShop.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAuwHwAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:42:40.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Repository\\Implementation\\Repository.cs",
+              "RelativeDocumentMoniker": "EShop.Repository\\Implementation\\Repository.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Repository\\Implementation\\Repository.cs",
+              "RelativeToolTip": "EShop.Repository\\Implementation\\Repository.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:40:35.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Repository\\Interface\\IRepository.cs",
+              "RelativeDocumentMoniker": "EShop.Repository\\Interface\\IRepository.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Repository\\Interface\\IRepository.cs",
+              "RelativeToolTip": "EShop.Repository\\Interface\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T20:40:33.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "EShop.Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\appsettings.json",
+              "RelativeToolTip": "EShop.Web\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-31T20:37:16.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "EShopApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Domain\\Identity\\EShopApplicationUser.cs",
+              "RelativeDocumentMoniker": "EShop.Domain\\Identity\\EShopApplicationUser.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Domain\\Identity\\EShopApplicationUser.cs",
+              "RelativeToolTip": "EShop.Domain\\Identity\\EShopApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T15:19:55.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AQIAAKMSAAAAAAAAAAAkwLoSAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-05-07T15:48:08.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Program.cs",
+              "RelativeDocumentMoniker": "EShop.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\elena\\Desktop\\integrated_systems\\EShop.Web\\Program.cs",
+              "RelativeToolTip": "EShop.Web\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T14:39:15.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "dbo.Orders [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/MovieAppDB/True/SqlTable/dbo.Orders.sql",
+              "ToolTip": "dbo.Orders [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-07T15:46:09.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "dbo.Tickets [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/MovieAppDB/True/SqlTable/dbo.Tickets.sql",
+              "ToolTip": "dbo.Tickets [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-07T15:42:01.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "dbo.TicketInOrders [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/MovieAppDB/True/SqlTable/dbo.TicketInOrders.sql",
+              "ToolTip": "dbo.TicketInOrders [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-07T15:41:36.017Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

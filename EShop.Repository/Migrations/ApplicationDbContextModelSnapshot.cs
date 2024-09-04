@@ -17,125 +17,138 @@ namespace EShop.Repository.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.3")
+                .HasAnnotation("ProductVersion", "8.0.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("EShop.Domain.Domain.Order", b =>
+            modelBuilder.Entity("EShop.Domain.Domain.Authors", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("OwnerId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<DateOnly?>("DateOfBirth")
+                        .HasColumnType("date");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("OwnerId");
-
-                    b.ToTable("Orders", (string)null);
+                    b.ToTable("Authors");
                 });
 
-            modelBuilder.Entity("EShop.Domain.Domain.Product", b =>
+            modelBuilder.Entity("EShop.Domain.Domain.Book", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("CreatedById")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid?>("AuthorId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<double>("Price")
-                        .HasColumnType("float");
-
-                    b.Property<string>("ProductDescription")
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ProductImage")
+                    b.Property<bool?>("IsAvailable")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ProductName")
+                    b.Property<string>("genre")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Rating")
-                        .HasColumnType("float");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CreatedById");
-
-                    b.ToTable("Products", (string)null);
-                });
-
-            modelBuilder.Entity("EShop.Domain.Domain.ProductInOrder", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("OrderId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("ProductId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("Quantity")
+                    b.Property<int>("yearOfRelease")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
+
+                    b.ToTable("Books");
+                });
+
+            modelBuilder.Entity("EShop.Domain.Domain.Orders", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int?>("LateFee")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("PubilsherId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("ReturnDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("EShop.Domain.Domain.PublishParametars", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int?>("Discount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MinimumRentDays")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PublishParametars");
+                });
+
+            modelBuilder.Entity("EShop.Domain.Domain.Publishers", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("AuthorId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("AuthorsId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("BookId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("OrderDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("OrderId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("PublishDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("RentAmount")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("BookId");
 
                     b.HasIndex("OrderId");
 
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("ProductInOrders", (string)null);
-                });
-
-            modelBuilder.Entity("EShop.Domain.Domain.ProductInShoppingCart", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("ProductId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.Property<Guid>("ShoppingCartId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.HasIndex("ShoppingCartId");
-
-                    b.ToTable("ProductInShoppingCarts", (string)null);
-                });
-
-            modelBuilder.Entity("EShop.Domain.Domain.ShoppingCart", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("OwnerId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("OwnerId")
-                        .IsUnique()
-                        .HasFilter("[OwnerId] IS NOT NULL");
-
-                    b.ToTable("ShoppingCarts", (string)null);
+                    b.ToTable("Publishers");
                 });
 
             modelBuilder.Entity("EShop.Domain.Identity.EShopApplicationUser", b =>
@@ -349,69 +362,36 @@ namespace EShop.Repository.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("EShop.Domain.Domain.Order", b =>
+            modelBuilder.Entity("EShop.Domain.Domain.Book", b =>
                 {
-                    b.HasOne("EShop.Domain.Identity.EShopApplicationUser", "Owner")
+                    b.HasOne("EShop.Domain.Domain.Authors", "Author")
                         .WithMany()
-                        .HasForeignKey("OwnerId");
+                        .HasForeignKey("AuthorId");
 
-                    b.Navigation("Owner");
+                    b.Navigation("Author");
                 });
 
-            modelBuilder.Entity("EShop.Domain.Domain.Product", b =>
+            modelBuilder.Entity("EShop.Domain.Domain.Publishers", b =>
                 {
-                    b.HasOne("EShop.Domain.Identity.EShopApplicationUser", "CreatedBy")
-                        .WithMany("MyProducts")
-                        .HasForeignKey("CreatedById");
+                    b.HasOne("EShop.Domain.Domain.Authors", "Author")
+                        .WithMany("Rents")
+                        .HasForeignKey("AuthorId");
 
-                    b.Navigation("CreatedBy");
-                });
-
-            modelBuilder.Entity("EShop.Domain.Domain.ProductInOrder", b =>
-                {
-                    b.HasOne("EShop.Domain.Domain.Order", "Order")
-                        .WithMany("ProductInOrders")
-                        .HasForeignKey("OrderId")
+                    b.HasOne("EShop.Domain.Domain.Book", "Book")
+                        .WithMany("Publishers")
+                        .HasForeignKey("BookId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("EShop.Domain.Domain.Product", "OrderedProduct")
-                        .WithMany("ProductInOrders")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasOne("EShop.Domain.Domain.Orders", "Order")
+                        .WithMany()
+                        .HasForeignKey("OrderId");
+
+                    b.Navigation("Author");
+
+                    b.Navigation("Book");
 
                     b.Navigation("Order");
-
-                    b.Navigation("OrderedProduct");
-                });
-
-            modelBuilder.Entity("EShop.Domain.Domain.ProductInShoppingCart", b =>
-                {
-                    b.HasOne("EShop.Domain.Domain.Product", "Product")
-                        .WithMany("ProductsInShoppingCart")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("EShop.Domain.Domain.ShoppingCart", "ShoppingCart")
-                        .WithMany("ProductInShoppingCarts")
-                        .HasForeignKey("ShoppingCartId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-
-                    b.Navigation("ShoppingCart");
-                });
-
-            modelBuilder.Entity("EShop.Domain.Domain.ShoppingCart", b =>
-                {
-                    b.HasOne("EShop.Domain.Identity.EShopApplicationUser", "Owner")
-                        .WithOne("UserCart")
-                        .HasForeignKey("EShop.Domain.Domain.ShoppingCart", "OwnerId");
-
-                    b.Navigation("Owner");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -465,28 +445,14 @@ namespace EShop.Repository.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("EShop.Domain.Domain.Order", b =>
+            modelBuilder.Entity("EShop.Domain.Domain.Authors", b =>
                 {
-                    b.Navigation("ProductInOrders");
+                    b.Navigation("Rents");
                 });
 
-            modelBuilder.Entity("EShop.Domain.Domain.Product", b =>
+            modelBuilder.Entity("EShop.Domain.Domain.Book", b =>
                 {
-                    b.Navigation("ProductInOrders");
-
-                    b.Navigation("ProductsInShoppingCart");
-                });
-
-            modelBuilder.Entity("EShop.Domain.Domain.ShoppingCart", b =>
-                {
-                    b.Navigation("ProductInShoppingCarts");
-                });
-
-            modelBuilder.Entity("EShop.Domain.Identity.EShopApplicationUser", b =>
-                {
-                    b.Navigation("MyProducts");
-
-                    b.Navigation("UserCart");
+                    b.Navigation("Publishers");
                 });
 #pragma warning restore 612, 618
         }

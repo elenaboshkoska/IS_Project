@@ -12,11 +12,11 @@ namespace EShop.Repository
             : base(options)
         {
         }
+        public virtual DbSet<Book> Books { get; set; }
+        public virtual DbSet<Publishers> Publishers { get; set; }
+        public virtual DbSet<Orders> Orders { get; set; }
 
-        public virtual DbSet<Product> Products { get; set; }
-        public virtual DbSet<ShoppingCart> ShoppingCarts { get; set; }
-        public virtual DbSet<Order> Orders { get; set; }
-        public virtual DbSet<ProductInShoppingCart> ProductInShoppingCarts { get; set; }
-        public virtual DbSet<ProductInOrder> ProductInOrders { get; set; }
+        public virtual DbSet<Authors> Authors { get; set; }
+        public virtual DbSet<PublishParametars> PublishParametars { get; set; }
     }
 }

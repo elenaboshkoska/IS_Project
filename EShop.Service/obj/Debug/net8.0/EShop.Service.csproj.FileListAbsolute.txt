@@ -1,0 +1,102 @@
+C:\Users\Stefani K\Source\Repos\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Service.deps.json
+C:\Users\Stefani K\Source\Repos\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Service.dll
+C:\Users\Stefani K\Source\Repos\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Service.pdb
+C:\Users\Stefani K\Source\Repos\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Domain.dll
+C:\Users\Stefani K\Source\Repos\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Repository.dll
+C:\Users\Stefani K\Source\Repos\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Domain.pdb
+C:\Users\Stefani K\Source\Repos\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Repository.pdb
+C:\Users\Stefani K\Source\Repos\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.csproj.AssemblyReference.cache
+C:\Users\Stefani K\Source\Repos\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stefani K\Source\Repos\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.AssemblyInfoInputs.cache
+C:\Users\Stefani K\Source\Repos\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.AssemblyInfo.cs
+C:\Users\Stefani K\Source\Repos\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.csproj.CoreCompileInputs.cache
+C:\Users\Stefani K\Source\Repos\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Se.2AB3CF61.Up2Date
+C:\Users\Stefani K\Source\Repos\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.dll
+C:\Users\Stefani K\Source\Repos\integrated_systems\EShop.Service\obj\Debug\net8.0\refint\EShop.Service.dll
+C:\Users\Stefani K\Source\Repos\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.pdb
+C:\Users\Stefani K\Source\Repos\integrated_systems\EShop.Service\obj\Debug\net8.0\ref\EShop.Service.dll
+C:\Users\Stefani K\source\repos\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Service.deps.json
+C:\Users\Stefani K\source\repos\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Service.dll
+C:\Users\Stefani K\source\repos\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Service.pdb
+C:\Users\Stefani K\source\repos\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Domain.dll
+C:\Users\Stefani K\source\repos\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Repository.dll
+C:\Users\Stefani K\source\repos\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Domain.pdb
+C:\Users\Stefani K\source\repos\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Repository.pdb
+C:\Users\Stefani K\source\repos\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.csproj.AssemblyReference.cache
+C:\Users\Stefani K\source\repos\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stefani K\source\repos\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.AssemblyInfoInputs.cache
+C:\Users\Stefani K\source\repos\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.AssemblyInfo.cs
+C:\Users\Stefani K\source\repos\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.csproj.CoreCompileInputs.cache
+C:\Users\Stefani K\source\repos\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Se.2AB3CF61.Up2Date
+C:\Users\Stefani K\source\repos\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.dll
+C:\Users\Stefani K\source\repos\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\refint\EShop.Service.dll
+C:\Users\Stefani K\source\repos\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.pdb
+C:\Users\Stefani K\source\repos\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\ref\EShop.Service.dll
+C:\Users\mtodo\Downloads\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Service.deps.json
+C:\Users\mtodo\Downloads\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Service.dll
+C:\Users\mtodo\Downloads\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Service.pdb
+C:\Users\mtodo\Downloads\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Domain.dll
+C:\Users\mtodo\Downloads\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Repository.dll
+C:\Users\mtodo\Downloads\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Domain.pdb
+C:\Users\mtodo\Downloads\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Repository.pdb
+C:\Users\mtodo\Downloads\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.csproj.AssemblyReference.cache
+C:\Users\mtodo\Downloads\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mtodo\Downloads\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.AssemblyInfoInputs.cache
+C:\Users\mtodo\Downloads\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.AssemblyInfo.cs
+C:\Users\mtodo\Downloads\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.csproj.CoreCompileInputs.cache
+C:\Users\mtodo\Downloads\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Se.2AB3CF61.Up2Date
+C:\Users\mtodo\Downloads\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.dll
+C:\Users\mtodo\Downloads\integrated_systems\EShop.Service\obj\Debug\net8.0\refint\EShop.Service.dll
+C:\Users\mtodo\Downloads\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.pdb
+C:\Users\mtodo\Downloads\integrated_systems\EShop.Service\obj\Debug\net8.0\ref\EShop.Service.dll
+C:\Users\213040\Downloads\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Service.deps.json
+C:\Users\213040\Downloads\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Service.dll
+C:\Users\213040\Downloads\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Service.pdb
+C:\Users\213040\Downloads\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Domain.dll
+C:\Users\213040\Downloads\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Repository.dll
+C:\Users\213040\Downloads\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Domain.pdb
+C:\Users\213040\Downloads\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Repository.pdb
+C:\Users\213040\Downloads\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.csproj.AssemblyReference.cache
+C:\Users\213040\Downloads\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\213040\Downloads\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.AssemblyInfoInputs.cache
+C:\Users\213040\Downloads\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.AssemblyInfo.cs
+C:\Users\213040\Downloads\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.csproj.CoreCompileInputs.cache
+C:\Users\213040\Downloads\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Se.2AB3CF61.Up2Date
+C:\Users\213040\Downloads\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.dll
+C:\Users\213040\Downloads\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\refint\EShop.Service.dll
+C:\Users\213040\Downloads\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.pdb
+C:\Users\213040\Downloads\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\ref\EShop.Service.dll
+C:\Users\elena\Downloads\213040\213040\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.csproj.AssemblyReference.cache
+C:\Users\elena\Downloads\213040\213040\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elena\Downloads\213040\213040\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.AssemblyInfoInputs.cache
+C:\Users\elena\Downloads\213040\213040\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.AssemblyInfo.cs
+C:\Users\elena\Downloads\213040\213040\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.csproj.CoreCompileInputs.cache
+C:\Users\elena\Downloads\213040\213040\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Service.deps.json
+C:\Users\elena\Downloads\213040\213040\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Service.dll
+C:\Users\elena\Downloads\213040\213040\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Service.pdb
+C:\Users\elena\Downloads\213040\213040\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Domain.dll
+C:\Users\elena\Downloads\213040\213040\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Repository.dll
+C:\Users\elena\Downloads\213040\213040\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Domain.pdb
+C:\Users\elena\Downloads\213040\213040\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Repository.pdb
+C:\Users\elena\Downloads\213040\213040\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Se.2AB3CF61.Up2Date
+C:\Users\elena\Downloads\213040\213040\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.dll
+C:\Users\elena\Downloads\213040\213040\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\refint\EShop.Service.dll
+C:\Users\elena\Downloads\213040\213040\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.pdb
+C:\Users\elena\Downloads\213040\213040\integrated_systems\integrated_systems\EShop.Service\obj\Debug\net8.0\ref\EShop.Service.dll
+C:\Users\elena\Desktop\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Service.deps.json
+C:\Users\elena\Desktop\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Service.dll
+C:\Users\elena\Desktop\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Service.pdb
+C:\Users\elena\Desktop\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Domain.dll
+C:\Users\elena\Desktop\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Repository.dll
+C:\Users\elena\Desktop\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Domain.pdb
+C:\Users\elena\Desktop\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Repository.pdb
+C:\Users\elena\Desktop\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.csproj.AssemblyReference.cache
+C:\Users\elena\Desktop\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elena\Desktop\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.AssemblyInfoInputs.cache
+C:\Users\elena\Desktop\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.AssemblyInfo.cs
+C:\Users\elena\Desktop\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.csproj.CoreCompileInputs.cache
+C:\Users\elena\Desktop\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Se.2AB3CF61.Up2Date
+C:\Users\elena\Desktop\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.dll
+C:\Users\elena\Desktop\integrated_systems\EShop.Service\obj\Debug\net8.0\refint\EShop.Service.dll
+C:\Users\elena\Desktop\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.pdb
+C:\Users\elena\Desktop\integrated_systems\EShop.Service\obj\Debug\net8.0\ref\EShop.Service.dll

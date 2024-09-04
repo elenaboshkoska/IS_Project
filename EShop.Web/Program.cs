@@ -1,19 +1,12 @@
 using EShop.Repository;
 using EShop.Domain.Identity;
 using Microsoft.EntityFrameworkCore;
-using EShop.Service.Interface;
-using EShop.Service.Implementation;
+
 using EShop.Repository.Implementation;
 using EShop.Repository.Interface;
-using EShop.Domain.Payment;
-using EShop.Domain.Email;
+
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Map Stripe Public and Secret Keys
-
-builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("StripeSettings"));
-builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("EmailSettings"));
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
@@ -26,11 +19,11 @@ builder.Services.AddDefaultIdentity<EShopApplicationUser>(options => options.Sig
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-builder.Services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
 
-builder.Services.AddTransient<IProductService, ProductService>();
+/*builder.Services.AddTransient<ITicketService, TicketService>();
 builder.Services.AddTransient<IShoppingCartService, ShoppingCartService>();
-builder.Services.AddTransient<IEmailService, EmailService>();
+builder.Services.AddTransient<IConcertService, ConcertService>();
+builder.Services.AddTransient<IOrderService, OrderService>();*/
 
 var app = builder.Build();
 

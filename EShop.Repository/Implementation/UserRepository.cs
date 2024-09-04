@@ -27,12 +27,11 @@ namespace EShop.Repository.Implementation
 
         public EShopApplicationUser Get(string id)
         {
-            var strGuid = id.ToString();
             return entities
-                .Include(z => z.UserCart)
-                .Include(z => z.UserCart.ProductInShoppingCarts)
-                .Include("UserCart.ProductInShoppingCarts.Product")
-                .First(s => s.Id == strGuid);
+             
+               .Include("ShoppingCart.ProductInShoppingCarts")
+               .Include("ShoppingCart.ProductInShoppingCarts.Product")
+               .SingleOrDefault(s => s.Id == id);
         }
         public void Insert(EShopApplicationUser entity)
         {
@@ -63,5 +62,6 @@ namespace EShop.Repository.Implementation
             entities.Remove(entity);
             context.SaveChanges();
         }
+
     }
 }
