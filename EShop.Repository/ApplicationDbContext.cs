@@ -17,6 +17,8 @@ namespace EShop.Repository
         public virtual DbSet<Orders> Orders { get; set; }
 
         public virtual DbSet<Authors> Authors { get; set; }
+        public virtual DbSet<BookInShoppingCart> BookInShoppingCarts { get; set; }
+        public virtual DbSet<ShoppingCart> ShoppingCarts { get; set; }
         public virtual DbSet<PublishParametars> PublishParametars { get; set; }
     }
 }

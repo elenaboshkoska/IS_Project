@@ -28,9 +28,9 @@ namespace EShop.Repository.Implementation
         public EShopApplicationUser Get(string id)
         {
             return entities
-             
-               .Include("ShoppingCart.ProductInShoppingCarts")
-               .Include("ShoppingCart.ProductInShoppingCarts.Product")
+               .Include(z => z.ShoppingCart)
+               .Include("ShoppingCart.BookInShoppingCarts")
+               .Include("ShoppingCart.BookInShoppingCarts.Book")
                .SingleOrDefault(s => s.Id == id);
         }
         public void Insert(EShopApplicationUser entity)

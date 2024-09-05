@@ -594,3 +594,4 @@ C:\Users\elena\Desktop\integrated_systems\EShop.Web\obj\Debug\net8.0\refint\ESho
 C:\Users\elena\Desktop\integrated_systems\EShop.Web\obj\Debug\net8.0\EShop.Web.pdb
 C:\Users\elena\Desktop\integrated_systems\EShop.Web\obj\Debug\net8.0\EShop.Web.genruntimeconfig.cache
 C:\Users\elena\Desktop\integrated_systems\EShop.Web\obj\Debug\net8.0\ref\EShop.Web.dll
+C:\Users\elena\Desktop\integrated_systems\EShop.Web\obj\Debug\net8.0\EShop.Web.sourcelink.json

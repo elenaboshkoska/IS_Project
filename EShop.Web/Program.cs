@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 
 using EShop.Repository.Implementation;
 using EShop.Repository.Interface;
+using EShop.Service.Interface;
+using EShop.Service.Implementation;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,12 +21,12 @@ builder.Services.AddDefaultIdentity<EShopApplicationUser>(options => options.Sig
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-
-/*builder.Services.AddTransient<ITicketService, TicketService>();
+builder.Services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
+builder.Services.AddScoped(typeof(IPublishRepository), typeof(PublishRepository));
+builder.Services.AddTransient<IBookService, BookService>();
+builder.Services.AddTransient<IOrderService, OrderService>();
+builder.Services.AddTransient<IPublishService, PublishService>();
 builder.Services.AddTransient<IShoppingCartService, ShoppingCartService>();
-builder.Services.AddTransient<IConcertService, ConcertService>();
-builder.Services.AddTransient<IOrderService, OrderService>();*/
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

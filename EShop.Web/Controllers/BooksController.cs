@@ -7,22 +7,26 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using EShop.Domain.Domain;
 using EShop.Repository;
+using System.Security.Claims;
+using EShop.Service.Interface;
 
 namespace EShop.Web.Controllers
 {
     public class BooksController : Controller
     {
-        private readonly ApplicationDbContext _context;
-
-        public BooksController(ApplicationDbContext context)
+        
+        private readonly IBookService bookService;
+        private readonly IShoppingCartService shoppingCartService;
+        public BooksController(IBookService bookService, IShoppingCartService shoppingCartService)
         {
-            _context = context;
+            this.shoppingCartService = shoppingCartService;
+            this.bookService = bookService;
         }
 
         // GET: Books
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            return View(await _context.Books.ToListAsync());
+            return View(bookService.GetBooks());
         }
 
         // GET: Books/Details/5
@@ -33,8 +37,7 @@ namespace EShop.Web.Controllers
                 return NotFound();
             }
 
-            var book = await _context.Books
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var book = bookService.GetBookById(id);
             if (book == null)
             {
                 return NotFound();
@@ -59,11 +62,36 @@ namespace EShop.Web.Controllers
             if (ModelState.IsValid)
             {
                 book.Id = Guid.NewGuid();
-                _context.Add(book);
-                await _context.SaveChangesAsync();
+                bookService.CreateNewBook(book);
                 return RedirectToAction(nameof(Index));
             }
             return View(book);
+        }
+        public IActionResult AddToCart(Guid? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var product = bookService.GetBookById(id);  
+
+            BookInShoppingCart ps = new BookInShoppingCart();
+
+            if (product != null)
+            {
+                ps.BookId = product.Id;
+            }
+
+            return View(ps);
+        }
+
+        [HttpPost]
+        public IActionResult AddToCartConfirmed(BookInShoppingCart model)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            shoppingCartService.AddToShoppingConfirmed(model, userId);
+            return View("Index", bookService.GetBooks());
         }
 
         // GET: Books/Edit/5
@@ -74,7 +102,7 @@ namespace EShop.Web.Controllers
                 return NotFound();
             }
 
-            var book = await _context.Books.FindAsync(id);
+            var book = bookService.GetBookById(id);
             if (book == null)
             {
                 return NotFound();
@@ -87,7 +115,7 @@ namespace EShop.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Title,Description,yearOfRelease,AuthorId,genre,IsAvailable,Id")] Book book)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Title,Description,yearOfRelease,AuthorId,genre,IsAvailable,Price,Id")] Book book)
         {
             if (id != book.Id)
             {
@@ -98,19 +126,11 @@ namespace EShop.Web.Controllers
             {
                 try
                 {
-                    _context.Update(book);
-                    await _context.SaveChangesAsync();
+                    bookService.UpdateBook(book);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!BookExists(book.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    throw;
                 }
                 return RedirectToAction(nameof(Index));
             }
@@ -125,8 +145,7 @@ namespace EShop.Web.Controllers
                 return NotFound();
             }
 
-            var book = await _context.Books
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var book = bookService.GetBookById(id);
             if (book == null)
             {
                 return NotFound();
@@ -140,19 +159,8 @@ namespace EShop.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
-            var book = await _context.Books.FindAsync(id);
-            if (book != null)
-            {
-                _context.Books.Remove(book);
-            }
-
-            await _context.SaveChangesAsync();
+            bookService.DeleteBook(id);
             return RedirectToAction(nameof(Index));
-        }
-
-        private bool BookExists(Guid id)
-        {
-            return _context.Books.Any(e => e.Id == id);
         }
     }
 }

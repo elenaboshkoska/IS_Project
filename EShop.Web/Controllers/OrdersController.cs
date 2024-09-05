@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using EShop.Domain.Domain;
 using EShop.Repository;
+using System.Security.Claims;
 
 namespace EShop.Web.Controllers
 {
@@ -22,6 +23,7 @@ namespace EShop.Web.Controllers
         // GET: Orders
         public async Task<IActionResult> Index()
         {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             return View(await _context.Orders.ToListAsync());
         }
 
@@ -32,7 +34,7 @@ namespace EShop.Web.Controllers
             {
                 return NotFound();
             }
-
+          
             var orders = await _context.Orders
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (orders == null)

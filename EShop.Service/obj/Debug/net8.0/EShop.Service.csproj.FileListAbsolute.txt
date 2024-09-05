@@ -100,3 +100,4 @@ C:\Users\elena\Desktop\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.S
 C:\Users\elena\Desktop\integrated_systems\EShop.Service\obj\Debug\net8.0\refint\EShop.Service.dll
 C:\Users\elena\Desktop\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.pdb
 C:\Users\elena\Desktop\integrated_systems\EShop.Service\obj\Debug\net8.0\ref\EShop.Service.dll
+C:\Users\elena\Desktop\integrated_systems\EShop.Service\obj\Debug\net8.0\EShop.Service.sourcelink.json

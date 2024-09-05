@@ -126,6 +126,8 @@ namespace EShop.Web.Areas.Identity.Pages.Account
                 user.FirstName = Input.FirstName;
                 user.LastName = Input.LastName;
                 user.Address = Input.Address;
+
+                user.ShoppingCart= new ShoppingCart();
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
                 if (result.Succeeded)

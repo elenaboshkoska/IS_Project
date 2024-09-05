@@ -70,3 +70,4 @@ C:\Users\elena\Desktop\integrated_systems\EShop.Domain\obj\Debug\net8.0\EShop.Do
 C:\Users\elena\Desktop\integrated_systems\EShop.Domain\obj\Debug\net8.0\refint\EShop.Domain.dll
 C:\Users\elena\Desktop\integrated_systems\EShop.Domain\obj\Debug\net8.0\EShop.Domain.pdb
 C:\Users\elena\Desktop\integrated_systems\EShop.Domain\obj\Debug\net8.0\ref\EShop.Domain.dll
+C:\Users\elena\Desktop\integrated_systems\EShop.Domain\obj\Debug\net8.0\EShop.Domain.sourcelink.json

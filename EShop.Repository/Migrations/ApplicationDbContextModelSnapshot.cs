@@ -58,6 +58,9 @@ namespace EShop.Repository.Migrations
                     b.Property<bool?>("IsAvailable")
                         .HasColumnType("bit");
 
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -74,6 +77,27 @@ namespace EShop.Repository.Migrations
                     b.HasIndex("AuthorId");
 
                     b.ToTable("Books");
+                });
+
+            modelBuilder.Entity("EShop.Domain.Domain.BookInShoppingCart", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("BookId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ShoppingCartId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BookId");
+
+                    b.HasIndex("ShoppingCartId");
+
+                    b.ToTable("BookInShoppingCarts");
                 });
 
             modelBuilder.Entity("EShop.Domain.Domain.Orders", b =>
@@ -149,6 +173,24 @@ namespace EShop.Repository.Migrations
                     b.HasIndex("OrderId");
 
                     b.ToTable("Publishers");
+                });
+
+            modelBuilder.Entity("EShop.Domain.Domain.ShoppingCart", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("OwnerId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OwnerId")
+                        .IsUnique()
+                        .HasFilter("[OwnerId] IS NOT NULL");
+
+                    b.ToTable("ShoppingCarts");
                 });
 
             modelBuilder.Entity("EShop.Domain.Identity.EShopApplicationUser", b =>
@@ -371,6 +413,25 @@ namespace EShop.Repository.Migrations
                     b.Navigation("Author");
                 });
 
+            modelBuilder.Entity("EShop.Domain.Domain.BookInShoppingCart", b =>
+                {
+                    b.HasOne("EShop.Domain.Domain.Book", "Book")
+                        .WithMany()
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EShop.Domain.Domain.ShoppingCart", "ShoppingCart")
+                        .WithMany("BookInShoppingCarts")
+                        .HasForeignKey("ShoppingCartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Book");
+
+                    b.Navigation("ShoppingCart");
+                });
+
             modelBuilder.Entity("EShop.Domain.Domain.Publishers", b =>
                 {
                     b.HasOne("EShop.Domain.Domain.Authors", "Author")
@@ -392,6 +453,15 @@ namespace EShop.Repository.Migrations
                     b.Navigation("Book");
 
                     b.Navigation("Order");
+                });
+
+            modelBuilder.Entity("EShop.Domain.Domain.ShoppingCart", b =>
+                {
+                    b.HasOne("EShop.Domain.Identity.EShopApplicationUser", "Owner")
+                        .WithOne("ShoppingCart")
+                        .HasForeignKey("EShop.Domain.Domain.ShoppingCart", "OwnerId");
+
+                    b.Navigation("Owner");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -453,6 +523,16 @@ namespace EShop.Repository.Migrations
             modelBuilder.Entity("EShop.Domain.Domain.Book", b =>
                 {
                     b.Navigation("Publishers");
+                });
+
+            modelBuilder.Entity("EShop.Domain.Domain.ShoppingCart", b =>
+                {
+                    b.Navigation("BookInShoppingCarts");
+                });
+
+            modelBuilder.Entity("EShop.Domain.Identity.EShopApplicationUser", b =>
+                {
+                    b.Navigation("ShoppingCart");
                 });
 #pragma warning restore 612, 618
         }

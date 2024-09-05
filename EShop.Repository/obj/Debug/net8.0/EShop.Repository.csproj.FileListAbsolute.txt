@@ -88,3 +88,4 @@ C:\Users\elena\Desktop\integrated_systems\EShop.Repository\obj\Debug\net8.0\ESho
 C:\Users\elena\Desktop\integrated_systems\EShop.Repository\obj\Debug\net8.0\refint\EShop.Repository.dll
 C:\Users\elena\Desktop\integrated_systems\EShop.Repository\obj\Debug\net8.0\EShop.Repository.pdb
 C:\Users\elena\Desktop\integrated_systems\EShop.Repository\obj\Debug\net8.0\ref\EShop.Repository.dll
+C:\Users\elena\Desktop\integrated_systems\EShop.Repository\obj\Debug\net8.0\EShop.Repository.sourcelink.json

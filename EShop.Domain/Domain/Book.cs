@@ -20,7 +20,7 @@ namespace EShop.Domain.Domain
         public string genre { get; set; }
 
         public bool? IsAvailable { get; set; }
-
+        public int Price { get; set; }
         public ICollection<Publishers>? Publishers { get; set; }
     }
 }

@@ -10,6 +10,7 @@ namespace EShop.Domain.Domain
     {
         public Guid PubilsherId { get; set; }
         public DateTime ReturnDate { get; set; }
+       // public ICollection<BookInOrders>? BookInOrders { get; set; }
         public int? LateFee { get; set; }
     }
 }
